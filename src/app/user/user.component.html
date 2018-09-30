@@ -1,0 +1,17 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Website </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr (click)="userDetail(user)" *ngFor="let user of userList">
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td>{{user.website}}</td>
+    </tr>
+  </tbody>
